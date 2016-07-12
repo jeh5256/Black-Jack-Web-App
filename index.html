@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Black Jack</title>
+    <link rel="stylesheet" type="text/css" href="finalStyle.css">
+	<link href='https://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body onload="preloadImages(imageArray); init();">
+    <div id="container">
+        <div id="header">  
+        </div>
+        <div id="content">
+            <canvas id="canvas" height="550" width="1100"></canvas>
+			<div id="inputs">
+				<label>Enter A Bet:</label>
+				<input type ="text" id="bet">
+				<div id="buttons">
+					<button class ="action-button shadow animate blue"type="button" id="deal" onclick="deal()">Deal</button>
+					<button class = "action-button shadow animate red" type="button" id="hit" onclick="hit()">Hit</button>
+					<button class = "action-button shadow animate green"type="button" id="stand" onclick="stand()">Stand</button>
+					<button class = "action-button shadow animate yellow" type="button" id="double" onclick="doubleDown()">Double</button>
+				</div>
+				<p class="text" id ="errorText"></p>
+				<p class="text" id ="playerCards"></p>
+				<p class="text" id ="dealerCards"></p>
+				<p class="text" id="playerMoney">Player Money: 5000</p>
+		</div>
+        </div>
+		
+    </div>
+    <script src="http://ocanvas.org/js/libs/ocanvas-2.8.3.min.js"</script>
+		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="finalScript.js"></script>
+	<script src="images.js"></script>
+</body>
+</html>
+
+	
+	
+	
+	
